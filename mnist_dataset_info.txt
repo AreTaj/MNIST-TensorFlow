@@ -1,0 +1,35 @@
+Features:
+ FeaturesDict({
+    'image': Image(shape=(28, 28, 1), dtype=uint8),
+    'label': ClassLabel(shape=(), dtype=int64, num_classes=10),
+})
+
+tfds.core.DatasetInfo(
+    name='mnist',
+    full_name='mnist/3.0.1',
+    description="""
+    The MNIST database of handwritten digits.
+    """,
+    homepage='http://yann.lecun.com/exdb/mnist/',
+    data_dir='/Users/Aresh/tensorflow_datasets/mnist/3.0.1',
+    file_format=tfrecord,
+    download_size=11.06 MiB,
+    dataset_size=21.00 MiB,
+    features=FeaturesDict({
+        'image': Image(shape=(28, 28, 1), dtype=uint8),
+        'label': ClassLabel(shape=(), dtype=int64, num_classes=10),
+    }),
+    supervised_keys=('image', 'label'),
+    disable_shuffling=False,
+    splits={
+        'test': <SplitInfo num_examples=10000, num_shards=1>,
+        'train': <SplitInfo num_examples=60000, num_shards=1>,
+    },
+    citation="""@article{lecun2010mnist,
+      title={MNIST handwritten digit database},
+      author={LeCun, Yann and Cortes, Corinna and Burges, CJ},
+      journal={ATT Labs [Online]. Available: http://yann.lecun.com/exdb/mnist},
+      volume={2},
+      year={2010}
+    }""",
+)

@@ -1,8 +1,11 @@
 import tensorflow as tf
 import tensorflow_datasets as tfds
 
-# Load 'citrus' dataset
-(train_data, test_data), info = tfds.load('citrus', split=['train', 'test'], with_info=True)
+# Load 'MNIST' dataset
+(mnist_train, mnist_test), info = tfds.load('mnist', split=['train', 'test'], with_info=True)
+ 
+#print("Features:\n",info.features)  # Get information about the dataset features
+    # 'image': Image(shape=(28, 28, 1), dtype=uint8),
+    # 'label': ClassLabel(shape=(), dtype=int64, num_classes=10)
 
-print(info.features)  # Get information about the dataset features
-print(train_data.shape)  # Get the shape of the training data
+print(info)
