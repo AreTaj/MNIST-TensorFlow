@@ -1,2 +1,7 @@
+# Ignore these filetypes:
 *.txt
+*.pdf
+*.png
+
+# Except these files:
 !requirements.txt
