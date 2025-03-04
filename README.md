@@ -1,6 +1,6 @@
 ## MNIST Image Classification with TensorFlow
 
-This project utilizes TensorFlow to build and train a model for classifying handwritten digits (0-9) from the MNIST dataset. 
+This project utilizes TensorFlow to build and train a model for classifying handwritten digits (0-9) from the MNIST dataset. Achieved a test accuracy of 98.5%.
 
 **Project Structure:**
 
@@ -35,7 +35,7 @@ This script trains a Convolutional Neural Network (CNN) model for MNIST image cl
     * Sets the optimizer ('adam') and loss function ('categorical_crossentropy') for training.
     * Defines accuracy as the evaluation metric.
 5. **Trains the model:** Fits the model to the training data (`x_train` and `y_train`) for 10 epochs. Uses validation data (`x_test` and `y_test`) to monitor performance during training.
-6. **Evaluates the model:** Evaluates the model's accuracy on the test set and prints the test accuracy.
+6. **Evaluates the model:** Evaluates the model's accuracy on the test set and prints the test accuracy. **Achieved a test accuracy of 98.5%.**
 
 **Running the Project:**
 
